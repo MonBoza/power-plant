@@ -29,3 +29,8 @@ export const blueFood = changeState("soil")(5);
 
 const hydrate = changeState("water")(1);
 const superWater = changeState("water")(5);
+
+// new plant functions
+
+const countryMusic = changeState("height")(3)
+const classicalMusic = changeState("height")(5)

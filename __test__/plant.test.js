@@ -12,5 +12,10 @@ describe('storeState', () => {
         const emptyGarden = feed({});
         expect(emptyGarden).toEqual({soil: 1});
     })
+        test('countryMusic should give empty garden a height of 3', () =>{
+        const countryMusic = changeState("height")(3);
+        const emptyGarden = countryMusic({});
+        expect(emptyGarden).toEqual({height: 3});
     })
+})
 })
