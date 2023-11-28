@@ -17,5 +17,12 @@ describe('storeState', () => {
         const emptyGarden = countryMusic({});
         expect(emptyGarden).toEqual({height: 3});
     })
+    test('should give audrey water: 1', () => {
+        const newPlant = storeState();
+        const audrey2 = newPlant();
+        const hydrate = changeState("water")(1);
+        audrey2 = hydrate({});
+        expect(audrey2).toEqual({water: 1});
+    });
 })
 })
